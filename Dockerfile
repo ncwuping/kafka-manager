@@ -4,7 +4,7 @@ ENV KAFKAMGR_VERSION 1.3.3.23
 
 RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.repo \
  && yum install sbt \
- && curl -s -O https://github.com/ncwuping/kafka-manager/blob/master/kafka-manager-${KAFKAMGR_VERSION}.tar.gz \
+ && curl -s -O https://github.com/ncwuping/kafka-manager/raw/master/kafka-manager-${KAFKAMGR_VERSION}.tar.gz \
  && tar zxf kafka-manager-${KAFKAMGR_VERSION}.tar.gz --directory /usr/src \
  && rm -f kafka-manager-${KAFKAMGR_VERSION}.tar.gz \
  && PATH=/opt/ibm/java/bin:\$PATH \
