@@ -9,5 +9,4 @@ RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.
  && rm -f kafka-manager-${KAFKAMGR_VERSION}.tar.gz \
  && PATH=/opt/ibm/java/bin:\$PATH \
  && JAVA_HOME=/opt/ibm/java \
- && /usr/src/kafka-manager-${KAFKAMGR_VERSION}/sbt -java-home /opt/ibm/java clean dist \
- && rm -rf /usr/src/kafka-manager-${KAFKAMGR_VERSION}
+ && /usr/src/kafka-manager-${KAFKAMGR_VERSION}/sbt -java-home /opt/ibm/java clean dist
