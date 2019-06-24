@@ -11,5 +11,5 @@ RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.
  && JAVA_HOME=/opt/ibm/java \
  && ./sbt -java-home /opt/ibm/java clean dist \
  && cd - \
- && mv -f /usr/src/kafka-manager-${KAFKAMGR_VERSION}/target/universal/kafka-manager-1.3.3.23.zip ./ \
- && rm -rf /root/{.ivy,.sbt} /usr/src/kafka-manager-${KAFKAMGR_VERSION}
+ && mv -f /usr/src/kafka-manager-${KAFKAMGR_VERSION}/target/universal/kafka-manager-${KAFKAMGR_VERSION}.zip ./ \
+ && rm -rf /root/{.ivy2,.sbt} /usr/src/kafka-manager-${KAFKAMGR_VERSION}
